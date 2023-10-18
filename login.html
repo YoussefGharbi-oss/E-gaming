@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="assets\css\login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sign_in">
+        <h1>Sign In</h1>
+        <div class="top_text">
+          <p>If you don't have a registered account</p>
+          <p>You can <b>Register Here !</b></p>
+        </div>
+
+        <form>
+          <div class="input">
+            <label for="username">Username</label>
+            <div class="type_in_container">
+              <img src="assets/Images/user.png" alt="" width="50px" />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <div class="type_in_container">
+              <img src="assets/Images/password.png" alt="" width="50px" />
+              <div class="password">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <img src="assets/Images/show_password.png" alt="" width="40px" "
+                />
+              </div>
+            </div>
+            <div class="password_options">
+              <div class="remember_me">
+                <input
+                  type="button"
+                  id="remember_me"
+                  name="remember_me"
+                  value="remember_me"
+                />
+                <p>Remember me</p>
+              </div>
+              <div class="forgot_password">
+                <p>Forgot password ?</p>
+              </div>
+            </div>
+          </div>
+          <button>Login</button>
+        </form>
+      </div>
+      <div class="sign_up"></div>
+      <div class="img_container"></div>
+    </div>
+  </body>
+</html>
