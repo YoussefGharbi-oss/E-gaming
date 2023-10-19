@@ -197,3 +197,63 @@ body {
 
 
 }
+.Profile-Pop-Up{
+  
+  width: 40vh;
+  height: 50vh;
+  background-color: #1d1e22;
+  position: absolute;
+  top: 14%;
+  right: 5%;
+  border-radius: 12px;
+  display: none;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+.Profile-Pop-Up img{
+  position: absolute;
+  border-radius: 50%; 
+  width: 80px; 
+  left: 85px;
+  top: 10%;
+
+}
+
+.Profile-Pop-Up p {
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  color: white;
+
+}
+.Profile-Pop-Up .exp{
+  position: absolute;
+  top: 70%;
+  left: 50px; 
+  color:#3DBDA7 ;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.Profile-Pop-Up .level{
+  position: absolute;
+  top: 70%;
+  left: 120px; 
+  color:#3DBDA7 ;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#avatar-file {
+  display: none; 
+}
+.custom-file-upload {
+  position: absolute;
+  top: 100px;
+  left: 70px; 
+  color:#3DBDA7 ;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}

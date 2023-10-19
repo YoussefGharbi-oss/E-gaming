@@ -16,4 +16,32 @@ popBtn.addEventListener("click" , function(){
         popup.style.display = "none"
         isOpen = false
     }
+}) 
+
+const ProfilePopUp = document.querySelector(".Profile-Pop-Up") 
+const ProfileBtn = document.querySelector(".avatar-btn") 
+let ProfileisOpen = false
+ProfileBtn.addEventListener("click" , function(){
+    if(!ProfileisOpen){
+        ProfilePopUp.style.display = "block"
+        ProfileisOpen = true
+    }
+    else{
+        ProfilePopUp.style.display = "none"
+        ProfileisOpen = false
+    }
+}) 
+const AvatarFile =document.getElementById("avatar-file") 
+const AvatarImage =document.querySelector(".avatar-img")  
+AvatarFile.addEventListener("change" , function(){
+    const file = this.files[0] 
+    if(file){
+        const reader = new FileReader() 
+        reader.addEventListener("load" , function(){
+            AvatarImage.setAttribute("src" , this.result)
+        })
+        reader.readAsDataURL(file)
+       
+    }
 })
+
