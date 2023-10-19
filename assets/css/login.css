@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.5s ease;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .container {
@@ -16,15 +17,16 @@
   gap: 50px;
   width: 50%;
   height: 100%;
-  padding: 100px 60px;
+  padding: 60px 60px;
   font-family: "Poppins";
   color: #3cb5a0;
 }
-.sign_in h1 {
+.sign_in h1,
+.sign_up h1 {
   font-size: 40px;
   font-weight: 700;
 }
-.sign_in .top_text {
+.sign_in .top_text .sign_up .top_text {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -40,7 +42,7 @@ p b {
   color: #3cb5a0;
   font-weight: 500;
 }
-.sign_in form {
+.sign_in form .sign_up form {
   display: flex;
   flex-direction: column;
 }
@@ -114,6 +116,7 @@ input:focus {
   font-size: 20px;
   font-weight: 300;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 .password_options {
@@ -122,25 +125,86 @@ input:focus {
   justify-content: space-between;
   align-items: center;
 }
-.sign_in button {
-  margin-top: 70px;
-  height: 90px;
+.sign_in button,
+.sign_up button {
+  margin-top: 50px;
+  height: 100px;
   width: 100%;
   border-radius: 40px;
   background-color: #3cb5a0;
   color: white;
   font-size: 48px;
   font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-.container .sign_up {
-  display: none;
-}
+
 .container .img_container {
+  display: flex;
+  position: relative;
   background-color: #00453f;
   width: 50%;
   height: 100%;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+}
+.img_container .image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+}
+.login_alternatives {
+  width: 100%;
+}
+.login_alternatives h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+}
+.login_alternatives .icon_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 0px;
+}
+.icon_container .icon {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon_container .iconX {
+  border-radius: 50%;
+  height: 63px;
+  width: 63px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.container .sign_up {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Poppins";
+  color: #3cb5a0;
+  opacity: 0;
 }
 ::placeholder {
   color: #3cb5a0;

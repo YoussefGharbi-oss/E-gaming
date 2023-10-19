@@ -14,13 +14,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="sign_in">
+      <div id="sign_in" class="sign_in">
         <h1>Sign In</h1>
         <div class="top_text">
           <p>If you don't have a registered account</p>
-          <p>You can <b>Register Here !</b></p>
+          <p>You can <b id="register">Register Here !</b></p>
         </div>
-
         <form>
           <div class="input">
             <label for="username">Username</label>
@@ -66,11 +65,129 @@
               </div>
             </div>
           </div>
-          <button>Login</button>
+          <button>Sign In</button>
+        </form>
+        <div class="login_alternatives">
+          <h1>- or -</h1>
+          <div class="icon_container">
+            <div class="icon">
+              <img src="assets/Images/icons/facebook.png" alt="" width="100%" />
+            </div>
+            <div class="icon">
+              <img src="assets/Images/icons/google.png" alt="" width="100%" />
+            </div>
+            <div class="iconX">
+              <img src="assets/Images/icons/X.png" alt="" width="80%" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="image" class="img_container">
+        <div>
+          <img
+            class="image"
+            src="assets/Images/other/pngtree-cartoon-fashion-minimalist-cyberpunk-style.png"
+            alt=""
+            width="100%"
+          />
+        </div>
+      </div>
+      <div id="sign_up" class="sign_up">
+        <h1>Sign Up</h1>
+        <div style="margin-top: 20px" class="top_text">
+          <p>If you have a registered account</p>
+          <p>You can <b>Login Here !</b></p>
+        </div>
+        <form>
+          <div class="input">
+            <label style="margin-top: 20px" for="username">Username</label>
+            <div class="type_in_container">
+              <img src="assets/Images/user.png" alt="" width="50px" />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+          </div>
+          <div class="input">
+            <label style="margin-top: 20px" for="email">E-mail</label>
+            <div class="type_in_container">
+              <img
+                src="assets/Images/icons/mail.png"
+                alt=""
+                width="40px"
+                style="margin-left: 5px; margin-right: 5px"
+              />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your E-mail"
+                required
+              />
+            </div>
+          </div>
+          <div class="input">
+            <label style="margin-top: 20px" for="password">Password</label>
+            <div class="type_in_container">
+              <img src="assets/Images/password.png" alt="" width="50px" />
+              <div class="password">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <img src="assets/Images/show_password.png" alt="" width="40px" "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <label style="margin-top: 20px" for="confirm_password"
+              >Password</label
+            >
+            <div class="type_in_container">
+              <img src="assets/Images/password.png" alt="" width="50px" />
+              <div class="password">
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="Confirm your password"
+                  required
+                />
+                <img src="assets/Images/show_password.png" alt="" width="40px" "
+                />
+              </div>
+            </div>
+          </div>
+          <button style="margin-top: 40px">Login</button>
+          <div class="login_alternatives">
+            <h1 style="margin-top: 15px">- or -</h1>
+            <div class="icon_container">
+              <div class="icon">
+                <img
+                  src="assets/Images/icons/facebook.png"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div class="icon">
+                <img src="assets/Images/icons/google.png" alt="" width="100%" />
+              </div>
+              <div class="iconX">
+                <img src="assets/Images/icons/X.png" alt="" width="80%" />
+              </div>
+            </div>
+          </div>
         </form>
       </div>
-      <div class="sign_up"></div>
-      <div class="img_container"></div>
     </div>
+    <script src="Js/login.js"></script>
   </body>
 </html>
